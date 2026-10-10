@@ -3,3 +3,5 @@ ENABLE:
   - ACTION
   - MARKDOWN
   - YAML
+ENABLEE:
+  - YAML
