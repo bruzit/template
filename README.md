@@ -11,7 +11,7 @@ Purpose of the project in one sentence or one short paragraph.
 
 **This repository:**
 
-Repository template for BruzIT projects: MegaLinter and semantic-release callers, release configuration, license and README skeleton.
+Repository template for BruzIT projects: MegaLinter and semantic-release callers, release configuration, license, security policy and README skeleton.
 
 ## Features
 
