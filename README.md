@@ -44,15 +44,9 @@ How to install and set up the project, step by step.
 
 1. Create the repository from this template, by hand ("Use this template") or as code with [BruzIT GitHub Organization as Code](https://github.com/bruzit/github-organization-as-code), which can also manage its settings, rulesets, environments and secrets.
 2. Set up the GitHub Apps and environments, provisioned by BruzIT GitHub Organization as Code:
-   - `release`: semantic-release ([BruzIT GitHub Actions and Workflows: Use Semantic Release Action](https://github.com/bruzit/github-actions-and-workflows#use-semantic-release-action)).
+   - `release`: semantic-release, which tags the initial commit `v0.0.0` on its first run, so the first release is `0.x` instead of `1.0.0` ([BruzIT GitHub Actions and Workflows: Use Semantic Release Action](https://github.com/bruzit/github-actions-and-workflows#use-semantic-release-action)).
    - `autofix`: MegaLinter fixes, `GH_AUTOFIX_APP_ID` variable and `GH_AUTOFIX_APP_PEM_FILE` secret ([BruzIT GitHub Actions and Workflows: Use MegaLinter Workflow](https://github.com/bruzit/github-actions-and-workflows#use-megalinter-workflow)); without it, MegaLinter only reports.
-3. Tag the initial commit `v0.0.0`, so the first release is `0.x` instead of `1.0.0` ([`.releaserc.yaml`](.releaserc.yaml) keeps breaking changes on minor):
-
-   ```shell
-   git tag v0.0.0 "$(git rev-list --max-parents=0 HEAD)" && git push origin v0.0.0
-   ```
-
-4. Make it yours:
+3. Make it yours:
    - In every section, replace the general line and the **This repository:** block with your project's content.
    - Make the first sentence of the description match the repository's GitHub description.
    - Search and replace `bruzit/template` in the badge URLs; add a workflow badge per required workflow in pipeline order.
@@ -64,7 +58,7 @@ Common tasks with minimal examples.
 
 **This repository:**
 
-Copy this outline; replace each section's content (Installation and Setup, step 4).
+Copy this outline; replace each section's content (Installation and Setup, step 3).
 
 ## Maintenance
 
