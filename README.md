@@ -11,7 +11,7 @@ State the project's purpose in one sentence or one short paragraph.
 
 **This repository:**
 
-Repository template for BruzIT projects: MegaLinter and semantic-release callers, release configuration, license, security policy and README skeleton.
+Repository template for BruzIT projects: MegaLinter and semantic-release callers, Renovate and release configuration, license, security policy and README skeleton.
 
 ## Features
 
@@ -24,6 +24,7 @@ List the features or key capabilities; add subsections as needed.
 - A README outline with required and optional sections.
 - MegaLinter, one tool that runs many linters, checks every pull request and, weekly, the whole repository: [`.mega-linter.yaml`](.mega-linter.yaml). Linter configurations: markdownlint [`.markdownlint.yaml`](.markdownlint.yaml), zizmor (GitHub Actions security linter) [`zizmor.yaml`](zizmor.yaml).
 - semantic-release reads the Conventional Commits and sets the version, changelog and GitHub release: [`.releaserc.yaml`](.releaserc.yaml).
+- Renovate opens dependency update pull requests: [`renovate.json`](renovate.json) extends the [organization preset](https://github.com/bruzit/.github/blob/main/renovate-config.json).
 
 ## Requirements
 
