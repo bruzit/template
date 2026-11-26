@@ -25,6 +25,7 @@ List the features or key capabilities; add subsections as needed.
 - MegaLinter, one tool that runs many linters, checks every pull request and, weekly, the whole repository: [`.mega-linter.yaml`](.mega-linter.yaml). Linter configurations: markdownlint [`.markdownlint.yaml`](.markdownlint.yaml), zizmor (GitHub Actions security linter) [`zizmor.yaml`](zizmor.yaml).
 - semantic-release reads the Conventional Commits and sets the version, changelog and GitHub release: [`.releaserc.yaml`](.releaserc.yaml).
 - Renovate opens dependency update pull requests: [`renovate.json`](renovate.json) extends the [organization preset](https://github.com/bruzit/.github/blob/main/renovate-config.json).
+- gitleaks scans staged changes for secrets before each commit: [`.pre-commit-config.yaml`](.pre-commit-config.yaml).
 
 ## Requirements
 
@@ -87,6 +88,8 @@ Say where to ask for help and report problems; for paid products, state the serv
 Describe the local development environment and project layout.
 
 **This repository:**
+
+Install the pre-commit hooks once per clone: `pre-commit install` ([pre-commit](https://pre-commit.com)).
 
 Run MegaLinter locally: [BruzIT GitHub Actions and Workflows: Linting](https://github.com/bruzit/github-actions-and-workflows#linting).
 
